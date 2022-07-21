@@ -68,8 +68,8 @@ body{
 
     .button{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        background-color: black;
+        grid-template-columns: auto auto auto !important;
+        background-color: white !important;
         padding-top: 30px;
         padding-left: 30px;
         padding-right: 30px;
@@ -79,8 +79,25 @@ body{
       }
 
       .container{
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: 1fr !important;
+        column-gap: 15px;
+        padding: 0rem 10rem;
       }
+      .card-section{
+        display: grid;
+        grid-template-columns: auto auto !important;
+        column-gap: 15px;
+        row-gap: 15px;
+      }
+      .contact{
+        display: grid;
+        grid-template-columns: auto auto auto auto !important;
+        column-gap: 10px;
+        padding: 0 5rem;
+        margin-top: 50px;
+        color: white;
+    }
   }
 
 /*   Mobile Resposive */
@@ -109,6 +126,38 @@ body{
     .column2 img{
         height: 245px;
         width: 233px;
+    }
+    .button{
+        display: grid;
+        grid-template-columns: auto!important;
+        background-color: white !important;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        border-radius: 5px;
+        gap: 20px;
+      }
+
+      .container{
+        display: grid;
+        grid-template-columns: 1fr !important;
+        column-gap: 15px;
+        padding: 0rem 10rem;
+      }
+      .card-section{
+        display: grid;
+        grid-template-columns: auto!important;
+        column-gap: 15px;
+        row-gap: 15px;
+      }
+      .contact{
+        display: grid;
+        grid-template-columns: auto !important;
+        column-gap: 10px;
+        padding: 0 5rem;
+        margin-top: 50px;
+        color: white;
     }
   }
 
@@ -205,16 +254,18 @@ body{
     padding-top: 150px;
 
 }
-hr{
-    width: 800px;
-    height: 0px;
-    top: 2530px;
-    border: 1px solid #d1d1d1;
+
+.divider{
+    width: 80%;
+    height: 2px;
+    background-color: #d1d1d1;
+    margin: 0 auto;
 }
 .contact{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap: 10px;
+    padding: 0 5rem;
     margin-top: 50px;
     color: white;
 }
